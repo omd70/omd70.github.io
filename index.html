@@ -1,90 +1,136 @@
-<!doctype html>
-<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
-<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
-  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/script.js"></script>
-
-  <title>Omd70.github.io</title>
-  <meta name="description" content="Hub for my github">
-
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
+<link rel="stylesheet" type="text/css" href="interface.css" />
+<style type="text/css">
+#apDiv1 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 1;
+	left: 5px;
+	top: 4px;
+}
+</style>
+<script type="text/javascript" src="main.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--<script type="text/javascript" src="../commons/jquery-1.3.1.js"></script>-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js
+"></script>
+<script type="text/javascript" src="inc/jquery.timers.js"></script>
+<script type="text/javascript" src="inc/jquery.dropshadow.js"></script>
+<script type="text/javascript" src="inc/mbTooltip.js"></script>
+<link rel="stylesheet" type="text/css" href="css/mbTooltip.css" title="style1"  media="screen">
+<style type="text/css">
+#apDiv2 {
+	position: absolute;
+	width: 40px;
+	height: 35px;
+	z-index: 1;
+	left: 428px;
+	top: 70px;
+}
+</style>
+<script>
+  $(function(){
+    $("[title]").mbTooltip({ // also $([domElement]).mbTooltip  >>  in this case only children element are involved
+      opacity : 1,       //opacity
+      wait:1,           //before show
+      cssClass:"default",  // default = default
+      timePerWord:100,      //time to show in milliseconds per word
+      hasArrow:false,			// if you whant a little arrow on the corner
+      hasShadow:true,
+      imgPath:"images/",
+      ancor:"mouse", //"parent"  you can ancor the tooltip to the mouse position or at the bottom of the element
+      shadowColor:"black", //the color of the shadow
+      mb_fade:1 //the time to fade-in
+    });
+  });
+</script>
+<title>Untitled Document</title>
 </head>
 
-<body>
-
-  <div class="wrapper">
-    <header>
-      <h1 class="title">Omd70.github.io</h1>
-    </header>
-    <div id="container">
-      <p class="tagline">Hub for my github</p>
-      <div id="main" role="main">
-        <div class="download-bar">
-        <div class="inner">
-          <a href="https://github.com/omd70" class="code">View Omd70.github.io on GitHub</a>
-        </div>
-        <span class="blc"></span><span class="trc"></span>
-        </div>
-        <article class="markdown-body">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </article>
-      </div>
-    </div>
-    <footer>
-      <div class="owner">
-
-      <p><a href="https://github.com/omd70" class="avatar"><img src="https://0.gravatar.com/avatar/21f142ed286b73e54e6014cdc6bc42a4?d=https%3A%2F%2Fidenticons.github.com%2Faa96c21b2d1c5dd3bed7d04a4debffea.png&amp;r=x&amp;s=60" width="48" height="48"/></a>View <a href="https://github.com/omd70">omd70</a> on <a href="https://www.github.com">GitHub</a></p>
-
-      </div>
-      <div class="creds">
-        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br/>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
-      </div>
-    </footer>
-  </div>
-  <div class="current-section">
-    <a href="#top">Scroll to top</a>
-    <a href="https://github.com/omd70/omd70.github.io/tarball/master" class="tar">tar</a><a href="https://github.com/omd70/omd70.github.io/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
-    <p class="name"></p>
-  </div>
-
-  
+<body id="body" >
+<table width="1206" height="366" border="0" align="left">
+  <tr>
+    <th width="72" height="50" scope="col">Cash : <span id="cash">0</span></th>
+    <th width="189" height="50" align="left" scope="col"><blockquote>Workers : <span id="workers">0</span>
+        
+    </blockquote></th>
+    <td width="141" scope="col"><input type="button" name="Bworker" id="Bworker" value="Buy Worker" onclick="workerBuy(1)" title="Workers complete actions for you at 50% efficiency"/>
+    <span id="workerCost">20</span> Cash</td>
+    <td width="137" align="center" scope="col"><strong>Upgrades</strong></td>
+    <td width="104" align="center" scope="col">Clicks per resource / Price</td>
+    <td width="180" rowspan="7" scope="col">&nbsp;</td>
+    <td width="181" rowspan="7" scope="col">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="50">Wood : <br /><span id="wood">0</span></td>
+    <td height="50"><input type="button" name="Gwood" id="Gwood" value="Gather wood" onclick="woodG(1)"/>
+    <input type="button" name="Swood" id="Swood" value="Sell wood" onclick="woodS(1)" /></td>
+    <td width="141" scope="col">Workers : <span id="woodWorkers">0</span>&nbsp;&nbsp;<input name="AddW1" type="button" value="+" id="AddW1" onclick="woodWorkerAdd(1)" style="visibilty:hidden;display:none" class="worker"/>
+    <input type="button" name="RemoveW1" id="RemoveW1" value="-" onclick="woodWorkerRemove(1)" style="visibility:hidden;display:none" class="worker"/> </td>
+    <td width="137" scope="col"><img src="Media (Personal)/Worker UPG1.JPG" alt="" name="WoodWorkerUpgA" width="45" height="45" id="WoodWorkerUpgA"  title="Increase the efficiency of workers cutting wood to 75% (250 Cash)" onclick="woodWorkerUpgA()"/><img src="Media (Personal)/Worker UPG2.JPG" alt="" name="WoodWorkerUpgB" id="WoodWorkerUpgB"  title="Increase the efficiency of workers cutting wood to 100% (1000 Cash)" onclick="woodWorkerUpgB()" class="workerupgrade"/></td>
+    <td width="104" align="center" scope="col">1 click / 1 cash</td>
+  </tr>
+  <tr>
+    <td height="50">Stone : <br /><span id="stone">0</span></td>
+    <td height="50"><input type="button" name="Gstone" id="Gstone" value="Mine stone" onclick="stoneG(0.5)"/>
+    <input type="button" name="Sstone" id="Sstone" value="Sell Stone" onclick="stoneS(1)" /></td>
+    <td width="141" scope="col">Workers : <span id="stoneWorkers">0</span>&nbsp;&nbsp;<input type="button" class="worker" name="addW2" id="AddW2" value="+" onclick="stoneWorkerAdd(1)" style="display:none"/>
+    <input type="button" class="worker" name="removeW2" id="RemoveW2" value="-" onclick="stoneWorkerRemove(1)" style="display:none"/></td>
+    <td width="137" scope="col"></td>
+    <td width="104" align="center" scope="col">2 click / 3 cash</td>
+  </tr>
+  <tr id="COPPER" style="visibility:collapse">
+    <td height="50">Copper : <br /><span id="copper">0</span></td>
+    <td height="50"><input type="button" name="Gcopper" id="Gcopper" value="Mine Copper" onclick="copperG(0.2)" style="display:none"/>
+    <input type="button" name="Scopper" value="Sell Copper" id="Scopper" onclick="copperS(1)" style="display:none"/>
+    <form id="form1" name="form1" method="post" action="">
+      <label>
+        <input type="button" name="UnlockCopper" id="UnlockCopper" value="Unlock Copper (50 Wood, 50 Stone, 100 Cash)" style="width: 170px;word-wrap:break-word;display:none" onclick="unlockCopper1(1)"/>
+      </label>
+    </form></td>
+    <td width="141" scope="col">Workers : <span id="copperWorkers">0</span>&nbsp;&nbsp;<input type="button" class="worker" name="addW3" id="AddW3" value="+" onclick="copperWorkerAdd(1)" style="visibility:hidden;display:none"/>
+    <input type="button" class="worker" name="removeW3" id="RemoveW3" value="-" onclick="copperWorkerRemove(1)" style="visibility:hidden;display:none"/></td>
+    <td width="137" scope="col"></td>
+    <td width="104" align="center" scope="col">5 click / 9 cash</td>
+  </tr>
+  <tr id="TIN" style="visibility:collapse">
+    <td height="50">Tin : <br /><span id="tin">0</span></td>
+    <td height="50"><input type="button" name="Gtin" id="Gtin" value="Mine Tin" onclick="tinG(1/12)" style="display:none"/>
+    <input type="button" name="Stin" value="Sell Tin" id="Stin" onclick="tinS(1)" style="display:none"/>
+    <input type="button" name="UnlockTin" id="UnlockTin" value="Unlock Tin (200 Wood,
+125 Stone, 75 Copper,
+500 Cash)" style="width:170px;word-wrap:break-word;display:none" onclick="unlockTin1(1)"/></td>
+    <td width="141" scope="col">Workers : <span id="tinWorkers">0</span>&nbsp;&nbsp;<input type="button" class="worker" name="addW4" id="AddW4" value="+" onclick="tinWorkerAdd(1)" style="display:none;visibility:hidden"/>
+    <input type="button" class="worker" name="removeW4" id="RemoveW4" value="-" onclick="tinWorkerRemove(1)" style="display:none;visibility:hidden"/></td>
+    <td width="137" scope="col"></td>
+    <td width="104" align="center" scope="col">12 click / 27 cash</td>
+  </tr>
+  <tr id="IRON" style="visibility:collapse">
+    <td height="50">Iron : <br /><span id="iron">0</span></td>
+    <td height="50"><input type="button" name="Giron" id="Giron" value="Mine Iron" onclick="ironG(1/25)" style="display:none"/>
+    <input type="button" name="Siron" value="Sell Iron" id="Siron" onclick="ironS(1)" style="display:none"/><input type="button" name="UnlockIron" id="UnlockIron" value="Unlock Iron (1000 Wood,
+700 Stone, 500 Copper,
+300 Tin, 2500 Cash)" style="width:170px;word-wrap:break-word;display:none" onclick="unlockIron1(1)"/></td>
+    <td width="141" scope="col">Workers : <span id="ironWorkers">0</span>&nbsp;&nbsp;<input type="button" class="worker" name="addW5" id="AddW5" value="+" onclick="ironWorkerAdd(1)" style="display:none;visibility:hidden"/>
+    <input type="button" class="worker" name="removeW5" id="RemoveW5" value="-" onclick="ironWorkerRemove(1)" style="display:none;visibility:hidden"/></td>
+    <td width="137" scope="col"></td>
+    <td width="104" align="center" scope="col">30 click / 81 cash</td>
+  </tr>
+  <tr id="STEEL" style="visibility:collapse">
+    <td height="50">Steel : <br /><span id="steel">0</span></td>
+    <td height="50"><input type="button" name="Gsteel" id="Gsteel" value="Smelt Steel" onclick="steelG(1)" style="display:none"/>
+    <input type="button" name="Ssteel" value="Sell Steel" id="Ssteel" onclick="steelS(1)" style="display:none"/><input type="button" name="UnlockSteel" id="UnlockSteel" value="Unlock Steel (5000 Wood,
+3000 Stone, 2000 Copper,
+1500 Tin, 1000 Iron,
+15000 Cash)" style="width:170px;word-wrap:break-word;display:none" onclick="unlockSteel1(1)"/></td>
+    <td width="137" scope="col">Workers : <span id="steelWorkers">0</span>&nbsp;&nbsp;<input type="button" class="worker" name="addW6" id="AddW6" value="+" onclick="steelWorkerAdd(1)" style="display:none;visibility:hidden"/>
+    <input type="button" class="worker" name="removeW6" id="RemoveW6" value="-" onclick="steelWorkerRemove(1)" style="display:none;visibility:hidden"/></td>
+    <td width="104" align="center" scope="col">&nbsp;</td>
+    <td width="170" align="center" scope="col">75 click / 243 cash</td>
+  </tr>
+</table>
 </body>
 </html>
